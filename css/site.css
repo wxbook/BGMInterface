@@ -119,8 +119,8 @@ tr.pending-user:hover span.user-actions, tr.list-users:hover td div.btn-group, t
 	  top: -9999px;
 	  left: -9999px;
 	}
-	tr { 
-	  border: 1px solid #ccc; 
+	tr {
+	  border: 1px solid #ccc;
 	}
 	td {
 	  border: none;
@@ -136,17 +136,36 @@ tr.pending-user:hover span.user-actions, tr.list-users:hover td div.btn-group, t
 	  padding-right: 10px;
 	  white-space: nowrap;
 	}
-	.list-users td:nth-of-type(1):before, .pending-user td:nth-of-type(1):before { content: "ID"; }
-	.list-users td:nth-of-type(2):before, .pending-user td:nth-of-type(2):before { content: "Name"; }
-	.list-users td:nth-of-type(3):before, .pending-user td:nth-of-type(3):before { content: "E-mail"; }
-	.list-users td:nth-of-type(4):before, .pending-user td:nth-of-type(4):before { content: "Phone"; }
-	.list-users td:nth-of-type(5):before, .pending-user td:nth-of-type(5):before { content: "City"; }
-	.list-users td:nth-of-type(6):before, .pending-user td:nth-of-type(6):before { content: "Role"; }
-	.list-users td:nth-of-type(7):before, .pending-user td:nth-of-type(7):before { content: "Status"; }
-	.list-users td:nth-of-type(8):before, .pending-user td:nth-of-type(8):before { content: "Actions"; }
-	.list-roles td:nth-of-type(1):before { content: "ID"; }
-	.list-roles td:nth-of-type(2):before { content: "Role"; }
-	.list-roles td:nth-of-type(3):before { content: "Description"; }
-	.list-roles td:nth-of-type(4):before { content: "Slug"; }
-	.list-roles td:nth-of-type(5):before { content: "Actions"; }
+	.list-users td:nth-of-type(1):before { content: "序号"; }
+	.list-users td:nth-of-type(2):before { content: "账号"; }
+	.list-users td:nth-of-type(3):before { content: "姓名"; }
+	.list-users td:nth-of-type(4):before { content: "学院"; }
+	.list-users td:nth-of-type(5):before { content: "班级"; }
+	.list-users td:nth-of-type(6):before { content: "借阅图书"; }
+	.list-users td:nth-of-type(7):before { content: "借阅时间"; }
+	.list-users td:nth-of-type(8):before { content: "归还时间"; }
+    .list-users td:nth-of-type(9):before { content: "编辑"; }
+    .list-admin td:nth-of-type(1):before { content: "序号"; }
+    .list-admin td:nth-of-type(2):before { content: "账号"; }
+    .list-admin td:nth-of-type(3):before { content: "姓名"; }
+    .list-admin td:nth-of-type(4):before { content: "学院"; }
+    .list-admin td:nth-of-type(5):before { content: "电话"; }
+    .list-admin td:nth-of-type(6):before { content: "权限"; }
+    .list-admin td:nth-of-type(7):before { content: "编辑"; }
+	.borrow-info td:nth-of-type(1):before { content: "序号"; }
+	.borrow-info td:nth-of-type(2):before { content: "ISBN"; }
+	.borrow-info td:nth-of-type(3):before { content: "标题"; }
+	.borrow-info td:nth-of-type(4):before { content: "作者"; }
+	.borrow-info td:nth-of-type(5):before { content: "出版社"; }
+    .borrow-info td:nth-of-type(6):before { content: "馆藏"; }
+    .borrow-info td:nth-of-type(7):before { content: "可借"; }
+    .borrow-info td:nth-of-type(8):before { content: "详细"; }
+    .latest-borrowing td:nth-of-type(1):before { content: "序号"; }
+    .latest-borrowing td:nth-of-type(2):before { content: "账号"; }
+    .latest-borrowing td:nth-of-type(3):before { content: "姓名"; }
+    .latest-borrowing td:nth-of-type(4):before { content: "学院"; }
+    .latest-borrowing td:nth-of-type(5):before { content: "班级"; }
+    .latest-borrowing td:nth-of-type(6):before { content: "借阅图书"; }
+    .latest-borrowing td:nth-of-type(7):before { content: "借阅时间"; }
+    .latest-borrowing td:nth-of-type(8):before { content: "归还时间"; }
 }
