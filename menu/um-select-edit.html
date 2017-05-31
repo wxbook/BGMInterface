@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>借阅伴侣|图书管理</title>
+    <title>借阅伴侣|用户管理</title>
 
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/site.css" rel="stylesheet">
@@ -85,12 +85,12 @@
                     <li><a href="../index.html">主页信息</a></li>
                     <li class="nav-header"><i class="icon-book"></i>图书管理</li>
                     <li><a href="bm-new.html">图书上架</a></li>
-                    <li class="active"><a href="bm-select.html">馆藏查询</a></li>
+                    <li><a href="bm-select.html">馆藏查询</a></li>
                     <li><a href="bm-info.html">借阅信息</a></li>
 
                     <li class="nav-header"><i class="icon-user"></i>用户管理</li>
                     <li><a href="um-add.html">添加用户</a></li>
-                    <li><a href="um-select.html">用户查询</a></li>
+                    <li class="active"><a href="um-select.html">用户查询</a></li>
 
                     <li class="nav-header"><i class="icon-file"></i>移动管理</li>
                     <li><a href="mm-roll.html">首页轮播</a></li>
@@ -107,22 +107,47 @@
         <div class="span9">
             <div class="row-fluid">
                 <div class="page-header">
-                    <h1>图书管理
-                        <small>图书查询</small>
+                    <h1>用户管理 <small>用户查询-修改</small>
+                        <button class="btn pull-right" onclick="javascript :history.back(-1);">返回</button>
                     </h1>
                 </div>
 
-                <div style="text-align: center">
-                    <select class="btn">
-                        <option value="isbn">ISBN</option>
-                        <option value="name">书名</option>
-                        <option value="author">作者</option>
-                        <option value="press">出版社</option>
-                    </select>
-                    <input type="search" class="btn" >
-                    <button class="btn btn-success" >搜索</button>
-                </div>
-                <hr>
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="control-group">
+                            <label class="control-label" for="user_id">账号</label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge" id="user_id" value="10001" readonly="readonly"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="user_name">姓名</label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge" id="user_name" value="张三"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="user_collage">学院</label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge" id="user_collage" value="信息与网络工程学院"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="user_class">班级</label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge" id="user_class" value="计算机142"/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-actions">
+                            <input type="submit" class="btn btn-success" value="更新" />
+                        </div>
+                    </fieldset>
+                </form>
 
 
             </div>
