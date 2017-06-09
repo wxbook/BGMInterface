@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>借阅伴侣|后台管理</title>
+
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/site.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">“无微不至”的借阅伴侣</a>
+            <div class="btn-group pull-right">
+                <a class="btn" href="../admin/adPer.html"><i class="icon-user"></i> Admin</a>
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../admin/adPer.html">个人信息</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">退出登录</a></li>
+                </ul>
+            </div>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li><a href="../../index.html">后台主页</a></li>
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">图书管理<b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../book/bkAdd.html">图书上架</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../book/bkSelect.html">馆藏查询</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../book/bkRec.html">推荐图书</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">借阅管理<b
+                            class="caret"></b></a>
+                        <!-- todo -->
+                        <ul class="dropdown-menu">
+                            <li><a href="../borrow/bwRes.html">预定信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../borrow/bwOut.html">已借信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../borrow/bwCart.html">借书车信息</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">推荐位管理<b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../position/ptRoll.html">首页轮播</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../position/pt250.html">豆瓣top250</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../position/ptNew.html">新书速递</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../position/ptPop.html">最受欢迎</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">用户管理<b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../user/uAdd.html">添加用户</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../user/uSelect.html">用户查询</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">其他管理<b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../other/othCollect.html">收藏信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../other/othZan.html">点赞信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../other/othComment.html">评论信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../other/othHistory.html">搜索历史</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../other/othPush.html">推送消息</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">后台管理<b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../admin/adPer.html">个人信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../admin/adInfo.html">管理员信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../admin/adAdd.html">添加管理员</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header"><i class="icon-home"></i>后台主页</li>
+                    <li><a href="../../index.html">主页信息</a></li>
+
+                    <li class="nav-header"><i class="icon-book"></i>图书管理（Book）</li>
+                    <li><a href="../book/bkAdd.html">图书上架</a></li>
+                    <li class="active"><a href="../book/bkSelect.html">馆藏查询</a></li>
+                    <li><a href="../book/bkRec.html">推荐图书</a></li>
+
+                    <li class="nav-header"><i class="icon-book"></i>借阅管理（Borrow）</li>
+                    <li><a href="../borrow/bwRes.html">预定信息</a></li>
+                    <li><a href="../borrow/bwOut.html">已借信息</a></li>
+                    <li><a href="../borrow/bwCart.html">借书车信息</a></li>
+
+                    <li class="nav-header"><i class="icon-book"></i>推荐位管理（Position）</li>
+                    <li><a href="../position/ptRoll.html">首页轮播</a></li>
+                    <li><a href="../position/pt250.html">豆瓣top250</a></li>
+                    <li><a href="../position/ptNew.html">新书速递</a></li>
+                    <li><a href="../position/ptPop.html">最后欢迎</a></li>
+
+                    <li class="nav-header"><i class="icon-user"></i>用户管理（User）</li>
+                    <li><a href="../user/uAdd.html">添加用户</a></li>
+                    <li><a href="../user/uSelect.html">用户查询</a></li>
+
+                    <li class="nav-header"><i class="icon-file"></i>其他管理（Other）</li>
+                    <li><a href="../other/othCollect.html">收藏信息</a></li>
+                    <li><a href="../other/othZan.html">点赞信息</a></li>
+                    <li><a href="../other/othComment.html">评论信息</a></li>
+                    <li><a href="../other/othHistory.html">搜索历史</a></li>
+                    <li><a href="../other/othPush.html">推送消息</a></li>
+
+                    <li class="nav-header"><i class="icon-wrench"></i>后台管理（Admin）</li>
+                    <li><a href="../admin/adPer.html">个人信息</a></li>
+                    <li><a href="../admin/adInfo.html">管理员信息</a></li>
+                    <li><a href="../admin/adAdd.html">添加管理员</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="span9">
+            <div class="row-fluid">
+                <div class="page-header">
+                    <h1>图书管理
+                        <small>馆藏查询</small>
+                    </h1>
+                </div>
+
+                <div style="text-align: center">
+                    <select class="btn">
+                        <option value="isbn">ISBN</option>
+                        <option value="name">书名</option>
+                        <option value="author">作者</option>
+                        <option value="press">出版社</option>
+                    </select>
+                    <input type="search" class="btn" >
+                    <button class="btn btn-success" >搜索</button>
+                </div>
+                <hr>
+
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer class="well">
+        &copy; University of science and technology of Anhui &nbsp<a href="http://acm.jtahstu.com/" target="_blank">ACM
+        Studio</a>
+    </footer>
+
+</div>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
