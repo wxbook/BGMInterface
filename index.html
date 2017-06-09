@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/> 
     <title>借阅伴侣|后台管理</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -12,6 +13,7 @@
     <![endif]-->
 </head>
 <body>
+
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container-fluid">
@@ -27,7 +29,8 @@
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="menu/bgm-per.html">个人信息</a></li>
+                <!-- todo -->
+                    <li><a href="#">个人信息</a></li>
                     <li class="divider"></li>
                     <li><a href="#">退出登录</a></li>
                 </ul>
@@ -38,36 +41,76 @@
 
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">图书管理<b
                             class="caret"></b></a>
+                            <!-- todo -->
                         <ul class="dropdown-menu">
-                            <li><a href="menu/bm-new.html">图书上架</a></li>
+                            <li><a href="#">图书上架</a></li>
                             <li class="divider"></li>
-                            <li><a href="menu/bm-select.html">馆藏查询</a></li>
+                            <li><a href="#">馆藏查询</a></li>
                             <li class="divider"></li>
-                            <li><a href="menu/bm-info.html">借阅信息</a></li>
+                            <li><a href="#">推荐图书</a></li>
                         </ul>
                     </li>
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">借阅管理<b
+                            class="caret"></b></a>
+                            <!-- todo -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">预定信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">已借信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">借书车信息</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">推荐位管理<b
+                            class="caret"></b></a>
+                            <!-- todo -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">首页轮播</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">豆瓣top250</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">新书速递</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">最受欢迎</a></li>
+                        </ul>
+                    </li>
+
+
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">用户管理<b
                             class="caret"></b></a>
+                            <!-- todo -->
                         <ul class="dropdown-menu">
-                            <li><a href="menu/um-add.html">添加用户</a></li>
+                            <li><a href="#">添加用户</a></li>
                             <li class="divider"></li>
-                            <li><a href="menu/um-select.html">用户查询</a></li>
+                            <li><a href="#">用户查询</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">移动管理<b
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">其他管理<b
                             class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="menu/mm-roll.html">首页轮播</a></li>
+                            <!-- todo -->
+                         <ul class="dropdown-menu">
+                            <li><a href="#">收藏信息</a></li>
                             <li class="divider"></li>
-                            <li><a href="menu/mm-ad.html">广告信息</a></li>
+                            <li><a href="#">点赞信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">评论信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">搜索历史</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">推送消息</a></li>
                         </ul>
                     </li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">后台管理<b
                             class="caret"></b></a>
+                            <!-- todo -->
                         <ul class="dropdown-menu">
-                            <li><a href="menu/bgm-per.html">个人信息</a></li>
+                            <li><a href="#">个人信息</a></li>
                             <li class="divider"></li>
-                            <li><a href="menu/bgm-admin.html">管理员</a></li>
+                            <li><a href="#">管理员信息</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">添加管理员</a></li>
                         </ul>
                     </li>
 
@@ -84,22 +127,38 @@
                 <ul class="nav nav-list">
                     <li class="nav-header"><i class="icon-home"></i>后台主页</li>
                     <li class="active"><a href="index.html">主页信息</a></li>
-                    <li class="nav-header"><i class="icon-book"></i>图书管理</li>
-                    <li><a href="menu/bm-new.html">图书上架</a></li>
-                    <li><a href="menu/bm-select.html">馆藏查询</a></li>
-                    <li><a href="menu/bm-info.html">借阅信息</a></li>
+                    <!-- todo -->
+                    <li class="nav-header"><i class="icon-book"></i>图书管理（Book）</li>
+                    <li><a href="#">图书上架</a></li>
+                    <li><a href="#">馆藏查询</a></li>
+                    <li><a href="#">推荐图书</a></li>
 
-                    <li class="nav-header"><i class="icon-user"></i>用户管理</li>
-                    <li><a href="menu/um-add.html">添加用户</a></li>
-                    <li><a href="menu/um-select.html">用户查询</a></li>
+                    <li class="nav-header"><i class="icon-book"></i>借阅管理（Borrow）</li>
+                    <li><a href="#">预定信息</a></li>
+                    <li><a href="#">已借信息</a></li>
+                    <li><a href="#">借书车信息</a></li>
 
-                    <li class="nav-header"><i class="icon-file"></i>移动管理</li>
-                    <li><a href="menu/mm-roll.html">首页轮播</a></li>
-                    <li><a href="menu/mm-ad.html">广告信息</a></li>
+                    <li class="nav-header"><i class="icon-book"></i>推荐位管理（Position）</li>
+                    <li><a href="#">首页轮播</a></li>
+                    <li><a href="#">豆瓣top250</a></li>
+                    <li><a href="#">新书速递</a></li>
+                    <li><a href="#">最后欢迎</a></li>
+                    
+                    <li class="nav-header"><i class="icon-user"></i>用户管理（User）</li>
+                    <li><a href="#">添加用户</a></li>
+                    <li><a href="#">用户查询</a></li>
 
-                    <li class="nav-header"><i class="icon-wrench"></i>后台管理</li>
-                    <li><a href="menu/bgm-per.html">个人信息</a></li>
-                    <li><a href="menu/bgm-admin.html">管理员</a></li>
+                    <li class="nav-header"><i class="icon-file"></i>其他管理（Other）</li>
+                    <li><a href="#">收藏信息</a></li>
+                    <li><a href="#">点赞信息</a></li>
+                    <li><a href="#">评论信息</a></li>
+                    <li><a href="#">搜索历史</a></li>
+                    <li><a href="#">推送消息</a></li>
+
+                    <li class="nav-header"><i class="icon-wrench"></i>后台管理（Admin）</li>
+                    <li><a href="#">个人信息</a></li>
+                    <li><a href="#">管理员信息</a></li>
+                    <li><a href="#">添加管理员</a></li>
 
                 </ul>
             </div>
