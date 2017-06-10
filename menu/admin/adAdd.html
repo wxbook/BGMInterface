@@ -168,35 +168,42 @@
                         <div class="control-group">
                             <label class="control-label" for="admin_id">账号</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="admin_id" value="10000"/>
+                                <input type="text" class="input-xlarge" id="admin_id"/>
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="admin_name">姓名</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="admin_name" value="李四"/>
+                                <input type="text" class="input-xlarge" id="admin_name"/>
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label class="control-label" for="admin_collage">学院</label>
+                            <label class="control-label" for="admin_password">密码</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="admin_collage" value="信息与网络工程学院"/>
+                                <input type="password" class="input-xlarge" id="admin_password" />
                             </div>
                         </div>
 
                         <div class="control-group">
                             <label class="control-label" for="admin_phone">电话</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="admin_phone" value="18300000000"/>
+                                <input type="text" class="input-xlarge" id="admin_phone"/>
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label class="control-label" for="admin_root">权限</label>
+                            <label class="control-label" for="admin_school">学校</label>
                             <div class="controls">
-                                <select id="admin_root" class="input-xlarge">
+                                <input type="text" class="input-xlarge" id="admin_school"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="admin_status">权限</label>
+                            <div class="controls">
+                                <select id="admin_status" class="input-xlarge">
                                     <option value="0">管理员</option>
                                     <option value="1">维护员</option>
                                 </select>
@@ -207,6 +214,7 @@
 
                         <div class="form-actions">
                             <input type="submit" class="btn btn-success" value="添加" />
+                            <input type="reset" class="btn" value="重置" />
                         </div>
                     </fieldset>
                 </form>

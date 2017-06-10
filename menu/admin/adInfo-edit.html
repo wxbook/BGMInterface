@@ -160,7 +160,9 @@
         <div class="span9">
             <div class="row-fluid">
                 <div class="page-header">
-                    <h1>后台管理 <small>管理员信息 修改</small></h1>
+                    <h1>后台管理 <small>管理员信息 修改</small>
+                        <button class="btn pull-right" onclick="javascript :history.back(-1);">返回</button>
+                    </h1>
                 </div>
 
                 <form class="form-horizontal">
@@ -180,18 +182,19 @@
                         </div>
 
                         <div class="control-group">
-                            <label class="control-label" for="admin_collage">学院</label>
-                            <div class="controls">
-                                <input type="text" class="input-xlarge" id="admin_collage" value="信息与网络工程学院"/>
-                            </div>
-                        </div>
-
-                        <div class="control-group">
                             <label class="control-label" for="admin_phone">电话</label>
                             <div class="controls">
                                 <input type="text" class="input-xlarge" id="admin_phone" value="18300000000"/>
                             </div>
                         </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label" for="admin_school">学校</label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge" id="admin_school" value="安徽科技学院"/>
+                            </div>
+                        </div>
+
 
                         <div class="control-group">
                             <label class="control-label" for="admin_root">权限</label>
